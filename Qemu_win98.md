@@ -1,4 +1,7 @@
 # Install win98 from qemu
+## prepare the image
+Create the win98_install.iso from a legal win98 installation CD. For non-commercial use, here is a valid source https://archive.org/details/win98se_201607
+
 ## create virtual disk image
 ```bash
 ruixif@ubuntu: qemu-img create -f qcow2 win98.img 5G
