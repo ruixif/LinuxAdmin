@@ -8,10 +8,10 @@ ruixif@ubuntu: qemu-img create -f qcow2 win98.img 5G
 ```
 ## boot from the installation disk
 ```bash
-ruixif@ubuntu: qemu-system-i386 -hda win98.img -cdrom win98_install.iso -boot d -cpu core2duo -m 1024 -vga cirrus -net nic,model=pcnet -net user -localtime
+ruixif@ubuntu: qemu-system-i386 -hda win98.img -cdrom win98_install.iso -boot d -cpu pentium2 -m 256 -vga cirrus -net nic,model=pcnet -net user -localtime
 ```
 ## run the installed system
 ```bash
-ruixif@ubuntu: qemu-system-i386 -hda win98.img -boot c -cpu core2duo -m 1024 -vga cirrus -net nic,model=pcnet -net user -localtime
+ruixif@ubuntu: qemu-system-i386 -hda win98.img -cdrom win98see.iso -boot d -cpu pentium3 -m 1024 -vga cirrus -net nic,model=pcnet -net user -localtime
 ```
 
