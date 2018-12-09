@@ -12,6 +12,6 @@ ruixif@ubuntu: qemu-system-i386 -hda win98.img -cdrom win98_install.iso -boot d 
 ```
 ## run the installed system
 ```bash
-ruixif@ubuntu: qemu-system-i386 -hda win98.img -cdrom win98see.iso -boot d -cpu pentium3 -m 1024 -vga cirrus -net nic,model=pcnet -net user -localtime
+ruixif@ubuntu: sudo qemu-system-i386 -hda win98.img -cdrom myiso.iso -boot d -cpu pentium3 -m 1024 -vga cirrus -net nic,model=rtl8139 -smb $HOME/sambashare -soundhw gus
 ```
 
